@@ -7,5 +7,5 @@ before_install:
 
 script:
   - docker-compose exec --env 'RAILS_ENV=test" rails db:create
-  - docker-compose exec --env 'RAILS_ENV=test" db:migrate
+  - docker-compose exec --env 'RAILS_ENV=test" rails db:migrate
   - docker-compose exec --env 'RAILS_ENV=test" rails test
